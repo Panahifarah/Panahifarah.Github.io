@@ -1,0 +1,14 @@
+main {
+  background: #44a08d;
+  background: -webkit-linear-gradient(to right, #093637, #44a08d);
+  background: linear-gradient(to right, #093637, #44a08d);
+  color: #fafafa;
+}
+
+.contact-me a {
+  color: #fafafa;
+}
+
+.contact-me a svg path {
+  fill: #fafafa;
+}

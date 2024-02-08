@@ -1,0 +1,15 @@
+on:
+  schedule:
+    - cron: "0/10 * * * *"
+
+jobs:
+  ping_pong:
+    runs-on: ubuntu-latest
+    name: Uptime Check
+    steps:
+      - name: Check The Site
+        id: hello
+        uses: srt32/uptime@v0.2.1
+        with:
+          url-to-hit: "https://panahifar.ir/"
+          expected-statuses: "200, 301"
